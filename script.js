@@ -14,3 +14,13 @@ menuBurger.addEventListener("click", toggleMenu);
 menuLinks.forEach((link) => {
   link.addEventListener("click", toggleMenu);
 });
+const icons = [...document.querySelectorAll(".skills__icon")];
+const text = [...document.querySelectorAll(".skills__description")];
+const IconBoxes = [...document.querySelectorAll(".skills__technology")];
+
+icons.forEach((icon, index) => {
+  icon.addEventListener("click", () => {
+    text[index].classList.toggle("skills__description--unactive");
+    IconBoxes[index].classList.toggle("skills__technology--unactive");
+  });
+});

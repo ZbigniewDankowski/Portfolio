@@ -1,0 +1,61 @@
+.skills{
+    padding: 10px;
+    min-height: 100vh;
+    border: 10px solid black;
+    
+    
+    &__title{
+        font-size: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    &__technology{
+        flex-basis: 80%;
+        margin: 20px 0;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        &--unactive{
+            animation: animateIcon 2s linear both infinite;
+        }
+        &:nth-child(even){
+            animation-delay: 1s;
+        }
+        
+    }
+    &__icon{
+        font-size: 40px;
+        cursor: pointer;
+        
+        
+    }
+    &__description{
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px;
+        
+        
+        &--unactive{
+            display: none;
+            
+        }
+    }
+}
+
+@keyframes animateIcon{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
