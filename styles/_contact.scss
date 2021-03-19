@@ -1,0 +1,117 @@
+.contact {
+    min-height: 100vh;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    &__title {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 20px auto;
+    }
+    &__container {
+      width: 90%;
+      margin: 30px auto;
+      min-height: 50vh;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+      
+    }
+  }
+ 
+  
+  .socials {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__title{
+      font-size: 30px;
+    }
+    &__list{
+      list-style: none;
+
+      display: flex;
+    width: 80%;
+    justify-content: space-between;
+    }
+    &__item{
+      margin: 50px 0;
+    }
+    &__link{
+        color: #fff;
+        text-decoration: none;
+        font-size: 50px;
+        transition: .3s;
+        &:hover{
+          transform: scale(1.2);
+          text-shadow: 0 0 10px white;
+        }
+    }
+  }
+  
+  
+  .formBx {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px white;
+    &__title {
+      padding: 10px 0;
+      font-size: 30px;
+      color: black;
+      
+    }
+    &__inputBox {
+      position: relative;
+      margin-top: 30px;
+      width: 100%;
+    }
+    &__input,&__textarea{
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      border: none;
+      border-bottom: 2px solid black;
+      outline: none;
+      resize: none;
+    }
+    &__text{
+      color: black;
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+    
+    &__input:focus ~ &__text,
+    &__input:valid ~ &__text,
+    &__textarea:focus ~ &__text,
+    &__textarea:valid ~ &__text
+    {
+      
+    font-size: 12px;
+    color: red;
+    transform: translateY(-20px);
+  }
+    & input[type="submit"] {
+      cursor: pointer;
+      min-width: 40%;
+      border: 2px solid black;
+      margin: 30px 0;
+      padding: 5px;
+      background-color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    & input[type="submit"]:hover {
+      background-color: black;
+      color: #fff;
+    }
+  }
