@@ -1,0 +1,53 @@
+.main {
+    padding: 10px;
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__hello{
+      font-size: 20px;
+      color: #fff;
+    font-weight: 500;
+//   line-height: 20px;
+    }
+    &__textBox{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    &__name{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    &__description{
+        font-size: 20px;
+  color: white;
+  font-weight: 500;
+    }
+    &__button{
+        position: relative;
+  background-color: black;
+  display: inline-block;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10%;
+  margin-top: 10px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  box-shadow: 0 5px 200px white;
+  transition: 1s;
+&:hover{
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 0 20px white;
+}
+    }
+  }
