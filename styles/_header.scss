@@ -23,9 +23,9 @@ color: black;
      }
   }
   &__logo{
-    position: relative;
     color: #fff;
     font-size: 20px;
+    padding: 10px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
@@ -36,7 +36,7 @@ color: black;
     top: 80px;
     left: -100%;
     display: block;
-    min-width: 100%;
+    width: 100%;
     min-height: 100vh;
     background-color: white;
     border: 1px solid black;
@@ -72,6 +72,9 @@ color: black;
     
   }
   &__toggle{
+    position: relative;
+    top: 0;
+    right: 0;
 font-size: 30px;
 margin:10px;
 color: white;

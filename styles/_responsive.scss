@@ -1,0 +1,136 @@
+@media(min-width:720px){
+.navigation__logo{
+    font-size: 36px;
+    padding-left: 20px;
+}
+.navigation__toggle{
+    font-size: 36px;
+}
+.about{
+    padding: 30px;
+    &__title{
+        font-size: 46px;
+    }
+    &__textTitle{
+        font-size: 30px;
+    }
+    &__description{
+        font-size: 24px;
+    }
+}
+.skills{
+    &__title{
+        font-size: 36px;
+    }
+    padding: 30px;
+    &__icon{
+        font-size: 70px;
+    }
+    &__description{
+        font-size: 20px;
+    }
+}
+.work{
+    padding: 30px;
+    &__title{
+        font-size: 40px;
+    }
+    &__projectTitle{
+        font-size:40px;
+    }
+    &__projectBtn{
+        font-size: 36px;
+    }
+}
+.contact{
+    padding: 30px;
+    &__title{
+        font-size: 40px;
+    }
+    & .formBx input[type="submit"] {
+        font-size: 25px;
+        padding: 10px 15px;
+    }
+}
+}
+
+
+@media(min-width:1024px){
+    .about{
+        padding: 50px;
+        &__title{
+            font-size: 56px;
+        }
+        &__textTitle{
+            font-size: 40px;
+        }
+        &__description{
+            font-size: 28px;
+        }
+    }
+    .skills{
+        padding: 50px;
+        &__title{
+            font-size: 56px;
+            margin-bottom: 50px;
+        }
+        &__icon{
+            font-size: 80px;
+        }
+        &__description{
+            font-size: 25px;
+        }
+    }
+    .work{
+        padding: 50px;
+        &__title{
+            font-size: 50px;
+        }
+        &__projectTitle{
+            font-size:50px;
+        }
+        &__projectBtn{
+            font-size: 46px;
+        }
+    }
+    .contact{
+        padding: 50px;
+        &__title{
+            font-size: 80px;
+        }
+        & .formBx input[type="submit"] {
+            font-size: 35px;
+            padding: 10px 15px;
+        }
+        & .socials{
+            &__title{
+                font-size: 40px;
+            }
+            &__link{
+                font-size: 70px;
+            }
+        }
+        & .formBx{
+            &__title{
+                font-size: 60px;
+            }
+            &__input{
+                font-size: 25px;
+                padding: 10px;
+            }
+            &__text{
+                font-size: 20px;
+            }
+            &__input:focus ~ &__text,
+            &__input:valid ~ &__text,
+            &__textarea:focus ~ &__text,
+            &__textarea:valid ~ &__text
+            {
+              
+            font-size: 18px;
+            }
+        }
+    }
+    
+
+}
